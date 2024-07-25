@@ -1,0 +1,21 @@
+.main{
+    text-align: center;
+}
+.Exp #WorkJD{
+    text-align: justify;
+}
+.projects #project-description{
+    text-align: justify;
+}
+.Dashboard #Dashboard-description{
+    text-align: justify;
+}
+.Accomplishment #accomp{
+    text-align: justify;
+}
+
+.inner_template{
+    background-color: #d8c7ff;
+    margin: 0%;
+    padding: 2%;
+}
