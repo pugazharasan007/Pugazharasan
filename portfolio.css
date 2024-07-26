@@ -1,6 +1,21 @@
 .main{
     text-align: center;
 }
+h4#degree{
+    display: inline-block;
+}
+h4#Percentage {
+    display: inline;
+    float: inline-end;
+}
+p#clg{
+    display: inline-block;
+
+}
+p#year{
+    display: inline;
+    float: right;
+}
 .Exp #WorkJD{
     text-align: justify;
 }
@@ -15,7 +30,17 @@
 }
 
 .inner_template{
-    background-color: #d8c7ff;
+    background-color: #e3daf7;
     margin: 0%;
     padding: 2%;
+}
+img {
+
+    position: relative;
+    float: left;
+    border-radius: 50%;
+    
+}
+span{
+    font-weight:bold;
 }
