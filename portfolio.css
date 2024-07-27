@@ -1,6 +1,82 @@
+h3{
+    text-align: center;
+}
+.inner_template{
+    
+    flex: 1;
+}
+.contacts{
+    padding: 10px;
+    gap: 15px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end  ;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    flex: 1;
+    
+        
+}
 .main{
     text-align: center;
 }
+img {
+
+    position: relative;
+    float: left;
+    border-radius: 50%;
+    
+}
+span{
+    font-weight:bold;
+}
+.Skill-container{
+    display: flex;
+    gap: 1.5%;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    justify-content: center;
+    /* background-color: rgb(47, 235, 235); */
+    
+}
+.skill-body{
+    max-width: 50%;
+    padding: 5%;
+    background-color: #f2f2f2;
+    border-radius: 2%;
+    text-align: center;
+}
+.title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.skills{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.skills{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.skills li{
+    margin-bottom: 15%;
+
+}
+@media (max-width: 400px) {
+    .Skill-container {
+      flex-direction: column;
+      height: 100%;
+    }
+}
+
+
 h4#degree{
     display: inline-block;
 }
@@ -34,13 +110,5 @@ p#year{
     margin: 0%;
     padding: 2%;
 }
-img {
 
-    position: relative;
-    float: left;
-    border-radius: 50%;
-    
-}
-span{
-    font-weight:bold;
-}
+
