@@ -2,28 +2,14 @@ h3{
     text-align: center;
 }
 .inner_template{
-    
-    flex: 1;
+    margin: 0%;
+    padding: 2%;
 }
-.contacts{
-    padding: 10px;
-    gap: 15px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end  ;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    flex: 1;
-    
-        
-}
+
 .main{
     text-align: center;
 }
-img {
+#Profile_photo{
 
     position: relative;
     float: left;
@@ -69,9 +55,10 @@ span{
     margin-bottom: 15%;
 
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
     .Skill-container {
       flex-direction: column;
+      justify-content: center;
       height: 100%;
     }
 }
@@ -105,10 +92,5 @@ p#year{
     text-align: justify;
 }
 
-.inner_template{
-    background-color: #e3daf7;
-    margin: 0%;
-    padding: 2%;
-}
 
 
