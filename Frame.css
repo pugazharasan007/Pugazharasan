@@ -1,0 +1,125 @@
+#hero{
+   position: relative;
+   height: 100vh;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+ }
+ /* Apply to the entire document or specific elements */
+body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+ #myVideo {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+}
+
+h1,h2{
+ margin: 1% 0;
+}
+.btn{
+ margin-top: 2%;
+}
+.fade-in-text {
+     opacity: 0;
+     animation: fadeIn 2s ease-in-out forwards;
+     animation-delay: 0.1s;
+ }
+
+ @keyframes fadeIn {
+     to {
+         opacity: 1;
+     }
+ }
+ .fade-up {
+   opacity: 0;
+   transform: translateY(20px);
+   animation: fadeUp 1s ease-in-out forwards;
+   animation-delay: 0.5s;
+}
+
+.fade-up-text {
+   opacity: 0;
+   transform: translateY(20px);
+   animation: fadeUp 1s ease-in-out forwards;
+   animation-delay: 1s; 
+}
+
+@keyframes fadeUp {
+   to {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+.cris{
+ font-family: "Playwrite AT", cursive;
+ font-weight: bold;
+ font-style: italic;
+
+}
+/* .flip-card {
+  background-color: transparent;
+  width: 100%;
+  perspective: 1000px;
+  margin-bottom: 30px; 
+} */
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner,
+.flip-card:active .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  /* position: absolute; */
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+.flip-card-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ede{
+    margin: 100%;
+}
+
+body{
+    background-color: #5c5a5a;
+}
+.logo {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
+}
