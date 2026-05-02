@@ -1,526 +1,461 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pugazh</title>
-    <link rel="icon" type="image/x-icon" href="./My first design.png">
-    <link rel="stylesheet" href="./Frame.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR&family=Playwrite+AT:ital@1&family=Playwrite+BE+VLG&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pugazharasan — Data &amp; AI Analyst</title>
+  <meta name="description" content="Pugazharasan — Data &amp; AI Analyst at AssetPLUS. Building dashboards, automations, and ML models with Python, Appsmith, n8n, MongoDB and LLMs." />
+  <link rel="icon" type="image/x-icon" href="./My first design.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Geist:wght@300..700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
 <body>
-  <!-- Navigation section -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color: #0a4275;">
-   
-    <a href="#" class=" navbar-brand active"><img src="./My first design.png" alt="Peace" height="25"> Pugazh</a>
-    <button
-    type="button"
-    class="navbar-toggler"
-    data-bs-target="#navbarNav"
-    data-bs-toggle="collapse"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle Navbar">
-        <span class="navbar-toggler-icon"></span>
+
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <!-- ============== NAV ============== -->
+  <nav class="nav" id="nav">
+    <a href="#top" class="nav-brand">
+      <img src="./My first design.png" alt="" />
+      <span>Pugazh<span class="dot">.</span></span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+      <span></span><span></span><span></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="mx-auto"></div>
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a href="./index.html" class=" nav-link text-white">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="./Projects.html" class="  nav-link text-white">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="./Experience.html" class="  nav-link text-white">Experience
-                
-              </a>
-          </li>
-             <li class="nav-item">
-            <a href="#cerificates" class="nav-link text-white">Certificates</a>
-            </li>
-            <li class="nav-item">
-                <a href="./contact.html" class="  nav-link text-white">Contact</a>
-            </li>
-        </ul>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="./index.html" class="active">Home</a></li>
+      <li><a href="./Projects.html">Projects</a></li>
+      <li><a href="./Experience.html">Experience</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    </div>
-
-
-</nav>
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center ">
-    <video autoplay muted loop id="myVideo">
-        <source src="./Front_page.mp4" type="video/mp4">
+  <!-- ============== HERO ============== -->
+  <header id="top" class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="./Front_page.mp4" type="video/mp4" />
     </video>
-    <div class="container position-absolute text-dark " data-aos="fade-up" data-aos-delay="500">
-      <div class="row justify-content-center">
-        <h1 class="cris col-12 col-md-6 text-center fade-in-text ">Explore Build Test Deploy</h1>
+    <div class="hero-overlay"></div>
 
+    <div class="hero-inner">
+      <div class="hero-tag reveal">
+        <span class="pulse-dot"></span>
+        <span class="mono">Currently @ AssetPLUS · Data &amp; AI Analyst</span>
       </div>
-        <div class="row justify-content-center pt-3 ">
-          <a href="#profile" class=" col-3 col-sm-2 col-md-1 col-lg-1 btn btn-outline-dark fade-in-text" >Start  &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-          </svg></a>
 
-        </div>
-        
+      <h1 class="hero-title reveal" style="--d: .1s">
+        Explore. <em>Build.</em><br />
+        Test. <em>Deploy.</em>
+      </h1>
+
+      <p class="hero-sub reveal" style="--d: .25s">
+        I'm <strong>Pugazharasan</strong> — a Data &amp; AI Analyst turning messy data
+        into dashboards, automations, and ML systems that ship. Python, Appsmith, n8n,
+        MongoDB, and LLMs are my daily tools.
+      </p>
+
+      <div class="hero-roles reveal" style="--d: .35s">
+        <span class="role-chip"><i class="fa-solid fa-chart-line"></i> Data &amp; AI Analyst</span>
+        <span class="role-chip"><i class="fa-solid fa-bolt"></i> n8n Automation</span>
+        <span class="role-chip"><i class="fa-solid fa-table-columns"></i> Appsmith Dashboards</span>
+        <span class="role-chip"><i class="fa-solid fa-robot"></i> LLM Apps</span>
+      </div>
+
+      <div class="hero-cta reveal" style="--d: .5s">
+        <a href="#profile" class="btn btn-primary">
+          Start the tour
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="./Projects.html" class="btn btn-ghost">
+          See projects
+        </a>
+      </div>
+
+      <a href="#profile" class="scroll-indicator" aria-label="Scroll down">
+        <span class="mouse"><span class="wheel"></span></span>
+        <span class="mono">scroll</span>
+      </a>
     </div>
-</section>
+  </header>
 
-<section id="profile">
-  <div class="container my-5 my-sm-5">
-    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg fade-up">
-      <div class="col-12 col-lg-7 p-3 p-lg-5 pt-lg-3">
-        <h1 class="display-1 lh-1 fade-up-text ">Hello...</h1>
-        <br/>
-        <p class="lead fade-up-text">&nbsp; &nbsp; &nbsp; &nbsp;I am Pugazharasan, a data scientist and web developer with a strong passion for transforming data into actionable insights and building web applications. With a robust background in machine learning, deep learning, natural language processing, and web technologies, I have developed a versatile skill set that allows me to tackle a wide range of projects.</p>
+  <!-- ============== ABOUT ============== -->
+  <section id="profile" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow mono">// 01 — about</span>
+        <h2 class="section-title">Hello.</h2>
+      </div>
 
-      </div>
-      <div class="cl-12 col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-          <img class="rounded-lg-3 rounded-3" src="./about_my_self.jpg" alt="" width="720">
-      </div>
-    </div>
-  </div>
-</section>
-<section id="Skills" class=" bg-white fade-up">
-  <div class="container  my-3 py-3 bg-white shadow-lg rounded-3 text-center">
-    <h2 class="display-4 fade-up">Skills</h2>
-    <div class="row mt-3 fade-up lead">
-      <div class="col-12 col-sm-6  col-md-3 col-lg-3 mb-3">
-        <div class="card shadow-lg fade-up ">
-          <div class="card-header bg-warning lead py-3">
-            <p class="h5">Languages</p>
-          </div>
-          <div class="card-body lead">
-            <p>Python</p>
-            <p >C Programming</p>
-            <p >SQL</p>
-            <p >JavaScript</p>
-            <p >ReactJs</p>
-            <p >html</p>
-            <p >CSS</p>
-          </div>    
-        </div> 
-      </div>
-      <div class="col-12 col-sm-6  col-md-3 col-lg-3 mb-3">
-        <div class="card shadow-lg fade-up">
-          <div class="card-header bg-warning ">
-            <p class="h5 ">Data Science & Data Analytics </p>
-          </div>  
-            <div class="card-body ">
-              <p >Data Wrangling</p>
-              <p >Data Visualization</p>
-              <p >Statistical Analysis</p>
-              <p >Data Mining</p>
-              <p >Predictive Analytics</p>
-              <p >Machine Learning</p>
-              <P >Deep Learning</P>
-              <p >Natural Language Processing</p>
-              <p >Statistical Modeling</p>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="lead">
+            I'm <strong>Pugazharasan</strong> — Data &amp; AI Analyst at <strong>AssetPLUS</strong>,
+            with 1.2+ years of professional experience turning data into decisions.
+          </p>
+          <p>
+            I build internal dashboards in <strong>Appsmith</strong>, automate workflows with
+            <strong>n8n</strong>, write production Python, design <strong>MongoDB</strong>
+            schemas, and integrate <strong>LLMs</strong> into real product flows. With a
+            background in machine learning, deep learning, and NLP from my M.Tech at VIT,
+            I bring a full-stack analyst mindset — from the database to the dashboard.
+          </p>
+          <div class="about-meta">
+            <div>
+              <span class="mono muted">Role</span>
+              <strong>Data &amp; AI Analyst</strong>
             </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6  col-md-3 col-lg-3 mb-3 ">
-        <div class="card shadow-lg fade-up">
-          <div class="card-header bg-warning py-3">
-            <p class="h5">Libraries & Frameworks</p>
-          </div>                  
-          <div class="card-body">
-            <p >Bootstrap</p>
-            <p >TensorFlow</p>
-            <p >Keras</p>
-            <p>PyTorch</p>
-            <p >Scikit-learn</p>
-            <p >Numpy</p>
-            <p >Pandas</p>
-            
+            <div>
+              <span class="mono muted">Company</span>
+              <strong>AssetPLUS</strong>
+            </div>
+            <div>
+              <span class="mono muted">Based in</span>
+              <strong>Tamil Nadu, IN</strong>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6  col-md-3 col-lg-3 mb-3 ">
-        <div class="card shadow-lg fade-up">
-          <div class="card-header bg-warning py-3 ">
-            <p class="h5">Tools & IDEs</p>
-          </div>                  
-          <div class="card-body">
-            <p>Jupyter</p>
-            <p>Google Colab</p>
-            <p>Vs_Code</p>
-            <p>Power BI</p>
-            <p>Tableau</p>
-            <p>MongoDB</p>
-            <P>Oracle</P>
-            <p>MS-SQL</p>
-            <p>Ms-Excel</p>   
-          </div>
+
+        <div class="about-photo reveal" style="--d: .15s">
+          <img src="./about_my_self.jpg" alt="Pugazharasan" />
+          <div class="about-photo-frame"></div>
         </div>
-        
       </div>
     </div>
-  </div>
-</section>
-<section id="Education" class="py-5 " >
-  <div class="ede container mt-2 mb-1 bg-white rounded-3 fade-up d-flex flex-column justify-content-center" >
-      <div class="row my-3  shadow-lg rounded-3 fade-up" >
-          <h1 class="display-4 text-center" >Education</h1>
-          <div class="col-12 col-md-6 text-center text-md-start">
-              <p class="fs-4">Master of Technology, Computer Science (Big Data Analytics) </p>
-              <p class="lead">Vellore Institute of Technology</p>
-          </div>
-          <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-end ">
-              <p class="fs-4   pe-3 "> CGPA: 8.46 </p>
-              <br>
-              <p class="lead   pe-3"> 09/2022 - 05/2024</p>
-          </div>     
-      </div>
-  </div>
-  <div class="ede container my-1 bg-white rounded-3 fade-up" >
-      <div class="row my-1  shadow-lg fade-up ">
-          <div class="col-12 col-md-6 text-center text-md-start">
-              <p class="fs-4 pt-3">Bachelors of Engineering, Electrical and Electronics</p>
-              <p class="lead">Global Instiute Of Engineering & Technology</p>
-          </div>
-          <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-end">
-              <p class="fs-4  pe-3 pt-3"> CGPA: 7.69 </p>
-              <p class="lead  pe-3"> 09/2017 - 11/2021</p>
-          </div>     
-      </div>
-  </div>
-  <div class="ede container my-3 bg-white rounded-3 fade-up">
-      <div class="row my-3 rounded-3  shadow-lg fade-up ">
-          <div class="col-12 col-md-6  text-center text-md-start">
-              <p class="fs-4 pt-3">12th Standard, Computer Science</p>
-              <p class="lead">N.Krishnaswamy Mudaliar Higher Seconday School</p>
-          </div>
-          <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-end">
-              <p class="fs-4 pt-3">Percentage:82.75% </p>
-              <p class="lead  pe-3"> 06/2016 - 03/2017</p>
-          </div>     
-      </div>
-  </div>
-  <div class="ede container my-3 bg-white rounded-3 fade-up">
-      <div class="row my-3 rounded-3  shadow-lg fade-up">
-          <div class="col-12 col-md-6  text-center text-md-start">
-              <p class="fs-4 pt-3">10th Standard</p>
-              <p class="lead">N.Krishnaswamy Mudaliar Higher Seconday School</p>
-          </div>
-          <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-end">
-              <p class="fs-4   pe-3 pt-3"> Percentage: 86% </p>
-              <p class="lead  pe-3"> 06/2014 - 03/2015</p>
-          </div>     
-      </div>
-  </div>
+  </section>
 
+  <!-- ============== STATS ============== -->
+  <section class="section section-tight">
+    <div class="container">
+      <div class="stats-grid reveal">
+        <div class="stat">
+          <div class="stat-num" data-count="10">0</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="12">0</div>
+          <div class="stat-label">Projects shipped</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="25">0</div>
+          <div class="stat-label">Tools &amp; libraries</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="1">0</div>
+          <div class="stat-label">Years (professional)</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</section>
-<section id="cerificates">
-  <div class="container rounded-3  shadow-lg fade-up ">
-          
-          <h1 class="  display-4 text-center mt-3 fade-up">Certificates</h1>
-          <article class="row fade-up border-bottom">
-            <div class=" col-12 col-md-6  d-flex text-muted pt-3">
-                <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="55" height="55" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Udemy</title>
-                    <image href="./udemy.jpg" width="40" height="40" /></svg>
-                <div class="text-gray-dark">
-                    <p class="lead fade-up"><strong><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.udemy.com/certificate/UC-2dcd0437-9876-4b2b-bcd8-62354b2ffaae/">Data Science Complete Training</a></strong></p>
-                    <p><span class="lead">Crediential ID: </span>UC-2dcd0437-9876-4b2b-bcd8-62354b2ffaae</p>
-                    <p class="fade-up">Issued Sep-2024</p>
-                    <button type="button" class="btn btn-outline-primary mb-3 fade-up"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.udemy.com/certificate/UC-4b23ee9f-a654-4a37-8f80-312651ddec6c/">Show Crediential  &nbsp;</a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                      </svg></button>
-    
-                </div>
-    
+  <!-- ============== SKILLS ============== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow mono">// 02 — skills</span>
+        <h2 class="section-title">Things I work with.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-code"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="chip-row">
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">C</span>
+            <span class="chip">React.js</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="--d: .1s">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Data Science &amp; AI</h3>
+          </div>
+          <div class="chip-row">
+            <span class="chip chip-accent">LLMs</span>
+            <span class="chip">Machine Learning</span>
+            <span class="chip">Deep Learning</span>
+            <span class="chip">NLP</span>
+            <span class="chip">Predictive Analytics</span>
+            <span class="chip">Statistical Modeling</span>
+            <span class="chip">Data Wrangling</span>
+            <span class="chip">Data Mining</span>
+            <span class="chip">Visualization</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="--d: .2s">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-cubes"></i>
+            <h3>ML Frameworks</h3>
+          </div>
+          <div class="chip-row">
+            <span class="chip">TensorFlow</span>
+            <span class="chip">Keras</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">Scikit-learn</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="--d: .3s">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-toolbox"></i>
+            <h3>Tools, Dashboards &amp; Automation</h3>
+          </div>
+          <div class="chip-row">
+            <span class="chip chip-accent">Appsmith</span>
+            <span class="chip chip-accent">n8n</span>
+            <span class="chip chip-accent">MongoDB</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">Tableau</span>
+            <span class="chip">Jupyter</span>
+            <span class="chip">Google Colab</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Oracle</span>
+            <span class="chip">MS-SQL</span>
+            <span class="chip">Excel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== EDUCATION TIMELINE ============== -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow mono">// 03 — education</span>
+        <h2 class="section-title">The journey.</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <span class="mono accent">2022 — 2024</span>
+              <span class="badge">CGPA 8.46</span>
             </div>
-            <div class="col-12 col-md-6">
-                <img src="./Data_science.png" alt="Excel_data_analysis" class="img-fluid d-flex flex-column align-items-end py-3 mx-auto" height="400" width="400">
-            </div>
+            <h3>Master of Technology — Computer Science (Big Data Analytics)</h3>
+            <p>Vellore Institute of Technology</p>
+          </div>
+        </li>
 
+        <li class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <span class="mono accent">2017 — 2021</span>
+              <span class="badge">CGPA 7.69</span>
+            </div>
+            <h3>B.E. — Electrical &amp; Electronics Engineering</h3>
+            <p>Global Institute of Engineering &amp; Technology</p>
+          </div>
+        </li>
+
+        <li class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <span class="mono accent">2016 — 2017</span>
+              <span class="badge">82.75%</span>
+            </div>
+            <h3>12th Standard — Computer Science</h3>
+            <p>N. Krishnaswamy Mudaliar Higher Secondary School</p>
+          </div>
+        </li>
+
+        <li class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <span class="mono accent">2014 — 2015</span>
+              <span class="badge">86%</span>
+            </div>
+            <h3>10th Standard</h3>
+            <p>N. Krishnaswamy Mudaliar Higher Secondary School</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============== CERTIFICATES ============== -->
+  <section id="certificates" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow mono">// 04 — certificates</span>
+        <h2 class="section-title">Verified credentials.</h2>
+      </div>
+
+      <div class="cert-grid">
+        <article class="cert reveal">
+          <div class="cert-img"><img src="./Data_science.png" alt="Data Science Complete Training" /></div>
+          <div class="cert-body">
+            <div class="cert-issuer"><img src="./udemy.jpg" alt="" /><span>Udemy</span></div>
+            <h3>Data Science Complete Training</h3>
+            <p class="mono muted small">UC-2dcd0437-9876-4b2b-bcd8-62354b2ffaae · Sep 2024</p>
+            <a class="cert-link" href="https://www.udemy.com/certificate/UC-2dcd0437-9876-4b2b-bcd8-62354b2ffaae/" target="_blank" rel="noopener">View credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
         </article>
-        <article class="row fade-up border-bottom">
-          <div class=" col-12 col-md-6  d-flex text-muted pt-3">
-              <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="55" height="55" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Udemy</title>
-                  <image href="./Greatlearning_logo.png" width="40" height="40" /></svg>
-              <div class="text-gray-dark">
-                  <p class="lead fade-up"><strong><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.udemy.com/certificate/UC-4b23ee9f-a654-4a37-8f80-312651ddec6c/">Computer Vision</a></strong></p>
-                  <p><span class="lead">Crediential ID: </span>49366</p>
-                  <p class="fade-up">Issued Sep-2024</p>
-                  <button type="button" class="btn btn-outline-primary mb-3 fade-up"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://olympus.mygreatlearning.com/courses/49366/certificate">Show Crediential  &nbsp;</a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                      <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                    </svg></button>
-  
-              </div>
-  
-          </div>
-          <div class="col-12 col-md-6">
-              <img src="./Computer Vision.png" alt="Excel_data_analysis" class="img-fluid d-flex flex-column align-items-end py-3 mx-auto" height="400" width="400">
-          </div>
 
-      </article>
-          <article class="row fade-up border-bottom">
-            <div class=" col-12 col-md-6  d-flex text-muted pt-3">
-                <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="55" height="55" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Udemy</title>
-                    <image href="./udemy.jpg" width="40" height="40" /></svg>
-                <div class="text-gray-dark">
-                    <p class="lead fade-up"><strong><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.udemy.com/certificate/UC-4b23ee9f-a654-4a37-8f80-312651ddec6c/">Full Stack Web Development</a></strong></p>
-                    <p><span class="lead">Crediential ID: </span>UC-4b23ee9f-a654-4a37-8f80-312651ddec6c</p>
-                    <p class="fade-up">Issued Aug-2024</p>
-                    <button type="button" class="btn btn-outline-primary mb-3 fade-up"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.udemy.com/certificate/UC-4b23ee9f-a654-4a37-8f80-312651ddec6c/">Show Crediential  &nbsp;</a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                      </svg></button>
-    
-                </div>
-    
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./Web_Dev.png" alt="Excel_data_analysis" class="img-fluid d-flex flex-column align-items-end py-3 mx-auto" height="400" width="400">
-            </div>
-
+        <article class="cert reveal" style="--d: .05s">
+          <div class="cert-img"><img src="./Computer Vision.png" alt="Computer Vision" /></div>
+          <div class="cert-body">
+            <div class="cert-issuer"><img src="./Greatlearning_logo.png" alt="" /><span>Great Learning</span></div>
+            <h3>Computer Vision</h3>
+            <p class="mono muted small">ID 49366 · Sep 2024</p>
+            <a class="cert-link" href="https://olympus.mygreatlearning.com/courses/49366/certificate" target="_blank" rel="noopener">View credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
         </article>
-          <article class="row  fade-up border-bottom ">
-              <div class=" col-12 col-md-6 d-flex text-muted pt-3 ">
-                  <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="55" height="55" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                      <title>udemy</title>
-                      <image href="./udemy.jpg" width="40" height="40" /></svg>
-                  <div class="text-gray-dark">
-                      <p class="lead fade-up"><strong><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.udemy.com/certificate/UC-c1df0f90-4c9a-43f6-a12c-88a0d0924af1/">Azure Databricks & Spark For Data Engineers (PySpark / SQL)</a></strong></p>
-                      <p><span class="lead">Crediential ID: </span>UC-c1df0f90-4c9a-43f6-a12c-88a0d0924af1</p>
-                      <p class="fade-up">Issued Jul-2024</p>
-                      <button type="button" class="btn btn-outline-primary mb-3 fade-up"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.udemy.com/certificate/UC-c1df0f90-4c9a-43f6-a12c-88a0d0924af1/">Show Crediential  &nbsp;</a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                          <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                        </svg></button>
-      
-                  </div>
-      
-              </div>
-         
-                  <div class="col-12 col-md-6">
-                      <img src="./Azure.png" alt="" class="img-fluid d-flex flex-column align-items-end py-3 mx-auto" height="400" width="400">
-                  </div>
-          </article>
-              <article class="row fade-up border-bottom">
-                  <div class=" col-12 col-md-6  d-flex text-muted pt-3">
-                      <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="55" height="55" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                          <title>Guvi</title>
-                          <image href=".//guvi.webp" width="40" height="40" /></svg>
-                      <div class="text-gray-dark">
-                          <p class="lead fade-up"><strong><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.guvi.in/verify-certificate?id=7F5Rh107114mx00VY5">Keras for Beginners</a></strong></p>
-                          <p><span class="lead">Crediential ID: </span>7UB37T096K1b9c111u</p>
-                          <p class="fade-up">Issued Jun-2024</p>
-                          <button type="button" class="btn btn-outline-primary mb-3 fade-up"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.guvi.in/verify-certificate?id=7F5Rh107114mx00VY5">Show Crediential  &nbsp;</a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                              <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                            </svg></button>
-          
-                      </div>
-          
-                  </div>
-                  <div class="col-12 col-md-6">
-                      <img src="./Tensorflow Keras Cerification.png" alt="" class="img-fluid d-flex flex-column align-items-end py-3 mx-auto" height="400" width="400">
-                  </div>
-  
-              </article>
-              <article class="row fade-up border-bottom">
-                  <div class=" col-12 col-md-6  d-flex text-muted pt-3">
-                      <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="55" height="55" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                          <title>Coursera</title>
-                          <image href="./coursera.avif" width="40" height="40" /></svg>
-                      <div class="text-gray-dark">
-                          <p class="lead fade-up"><strong><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://coursera.org/share/83f1ab9c7e0370b60597d527caa68b72">Excel Basics for Data Analysis</a></strong></p>
-                          <p><span class="lead">Crediential ID: </span>83f1ab9c7e0370b60597d527caa68b72</p>
-                          <p class="fade-up">Issued May-2024</p>
-                          <button type="button" class="btn btn-outline-primary mb-3 fade-up"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://coursera.org/share/83f1ab9c7e0370b60597d527caa68b72">Show Crediential  &nbsp;</a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                              <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                          </svg></button>
-          
-                      </div>
-          
-                  </div>
-                  <div class="col-12 col-md-6">
-                      <img src="./Basics of excel.png" alt="Excel_data_analysis" class="img-fluid d-flex flex-column align-items-end py-3 mx-auto" height="400" width="400">
-                  </div>
-  
-              </article>
-              <article class="row fade-up border-bottom">
-                  <div class=" col-12 col-md-6  d-flex text-muted pt-3">
-                      <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="55" height="55" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                          <title>Coursera</title>
-                          <image href="./Tata.jpg" width="40" height="40" /></svg>
-                      <div class="text-gray-dark">
-                          <p class="lead fade-up"><strong><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/MyXvBcppsW2FkNYCX_Tata%20Group_XYsb79oGqNJ82Lsbh_1719815453029_completion_certificate.pdf">Tata Group - Data Visualisation: Empowering Business with Effective Insights Job Simulation</a></strong></p>
-                          <p><span class="lead">Crediential ID: </span>9LXvuCbQtxupXE9Pt</p>
-                          <p class="fade-up">Issued Jul-2024</p>
-                          <button type="button" class="btn btn-outline-primary mb-3 fade-up"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/MyXvBcppsW2FkNYCX_Tata%20Group_XYsb79oGqNJ82Lsbh_1719815453029_completion_certificate.pdf">Show Crediential  &nbsp;</a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                              <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                            </svg></button>
-          
-                      </div>
-          
-                  </div>
-                  <div class="col-12 col-md-6">
-                      <img src="./Tata.png" alt="Excel_data_analysis" class="img-fluid d-flex flex-column align-items-end py-3 mx-auto" height="400" width="400">
-                  </div>
-  
-              </article>
-              <article class="row fade-up border-bottom">
-                  <div class=" col-12 col-md-6  d-flex text-muted pt-3">
-                      <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="55" height="55" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                          <title>Coursera</title>
-                          <image href="./IBM.png" width="40" height="40" /></svg>
-                      <div class="text-gray-dark">
-                          <p class="lead fade-up"><strong><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">IBM ML0101EN: Machine Learning with Python</a></strong></p>
-                          <p><span class="lead">Crediential ID: </span>ac872cd580ff408b90bed944b1d0cac2</p>
-                          <p class="fade-up">Issued Aug-2023</p>
-                          <button type="button" class="btn btn-outline-primary mb-3 fade-up"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Show Crediential  &nbsp;</a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                              <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                            </svg></button>
-          
-                      </div>
-          
-                  </div>
-                  <div class="col-12 col-md-6">
-                      <img src="./IBM_certificate.png" alt="Excel_data_analysis" class="img-fluid d-flex flex-column align-items-end py-3 mx-auto" height="400" width="400">
-                  </div>
-  
-              </article>
-              <article class="row fade-up border-bottom">
-                  <div class=" col-12 col-md-6  d-flex text-muted pt-3">
-                      <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="55" height="55" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                          <title>LinkedIn</title>
-                          <image href="./LinkedIn-logo.png" width="40" height="40" /></svg>
-                      <div class="text-gray-dark">
-                          <p class="lead fade-up"><strong><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/MyXvBcppsW2FkNYCX_Tata%20Group_XYsb79oGqNJ82Lsbh_1719815453029_completion_certificate.pdf">NLP with Python for Machine Learning Essential Training</a></strong></p>
-                          <p><span class="lead">Crediential ID: </span>d1debac313bf05f0b9c8143d66abd</p>
-                          <p class="fade-up">Issued Jul-2023</p>
-                          <button type="button" class="btn btn-outline-primary mb-3 fade-up"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/MyXvBcppsW2FkNYCX_Tata%20Group_XYsb79oGqNJ82Lsbh_1719815453029_completion_certificate.pdf">Show Crediential  &nbsp;</a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                              <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                            </svg></button>
-          
-                      </div>
-          
-                  </div>
-                  <div class="col-12 col-md-6">
-                      <img src="./NLP.png" alt="Excel_data_analysis" class="img-fluid d-flex flex-column align-items-end py-3 mx-auto" height="400" width="400">
-                  </div>
-  
-              </article>
-              <article class="row fade-up border-bottom">
-                  <div class=" col-12 col-md-6  d-flex text-muted pt-3">
-                      <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="55" height="55" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                          <title>Linkedin</title>
-                          <image href="./LinkedIn-logo.png" width="40" height="40" /></svg>
-                      <div class="text-gray-dark">
-                          <p class="lead fade-up"><strong><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.linkedin.com/learning/certificates/e9e0e07c90515dbb57596bd9380a4e297b6fca6ba4f3ca5f703422b3cc7d9559">Recurrent Neural Network</a></strong></p>
-                          <p><span class="lead">Crediential ID: </span>e9e0e07c90515dbb57596bd9380a4e297b</p>
-                          <p class="fade-up">Issued Aug-2023</p>
-                          <button type="button" class="btn btn-outline-primary mb-3 fade-up"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.linkedin.com/learning/certificates/e9e0e07c90515dbb57596bd9380a4e297b6fca6ba4f3ca5f703422b3cc7d9559">Show Crediential  &nbsp;</a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                              <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                            </svg></button>
-          
-                      </div>
-          
-                  </div>
-                  <div class="col-12 col-md-6">
-                      <img src="./RNN.png" alt="Excel_data_analysis" class="img-fluid d-flex flex-column align-items-end py-3 mx-auto" height="400" width="400">
-                  </div>
-  
-              </article>
-      
 
-  </div>
+        <article class="cert reveal" style="--d: .1s">
+          <div class="cert-img"><img src="./Web_Dev.png" alt="Full Stack Web Development" /></div>
+          <div class="cert-body">
+            <div class="cert-issuer"><img src="./udemy.jpg" alt="" /><span>Udemy</span></div>
+            <h3>Full Stack Web Development</h3>
+            <p class="mono muted small">UC-4b23ee9f-a654-4a37-8f80-312651ddec6c · Aug 2024</p>
+            <a class="cert-link" href="https://www.udemy.com/certificate/UC-4b23ee9f-a654-4a37-8f80-312651ddec6c/" target="_blank" rel="noopener">View credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
 
-</section>
+        <article class="cert reveal" style="--d: .15s">
+          <div class="cert-img"><img src="./Azure.png" alt="Azure Databricks &amp; Spark" /></div>
+          <div class="cert-body">
+            <div class="cert-issuer"><img src="./udemy.jpg" alt="" /><span>Udemy</span></div>
+            <h3>Azure Databricks &amp; Spark — PySpark / SQL</h3>
+            <p class="mono muted small">UC-c1df0f90-4c9a-43f6-a12c-88a0d0924af1 · Jul 2024</p>
+            <a class="cert-link" href="https://www.udemy.com/certificate/UC-c1df0f90-4c9a-43f6-a12c-88a0d0924af1/" target="_blank" rel="noopener">View credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
 
-<footer class="bg-body-tertiary text-center" ">
-  <!-- Grid container -->
-  <div class="container p-4 pb-0" >
-    <!-- Section: Social media -->
-    <section class="mb-4 " >
-      <!-- Google -->
-      <a
-        data-mdb-ripple-init
-        class="btn text-white btn-floating m-1"
-        style="background-color: #dd4b39;"
-        href="https://pugazharasan007.github.io/Pugazharasan/"
-        role="button"
-        ><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+        <article class="cert reveal" style="--d: .2s">
+          <div class="cert-img"><img src="./Tensorflow Keras Cerification.png" alt="Keras for Beginners" /></div>
+          <div class="cert-body">
+            <div class="cert-issuer"><img src="./guvi.webp" alt="" /><span>Guvi</span></div>
+            <h3>Keras for Beginners</h3>
+            <p class="mono muted small">7UB37T096K1b9c111u · Jun 2024</p>
+            <a class="cert-link" href="https://www.guvi.in/verify-certificate?id=7F5Rh107114mx00VY5" target="_blank" rel="noopener">View credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
 
-      <!-- Instagram -->
-      <a
-        data-mdb-ripple-init
-        class="btn text-white btn-floating m-1"
-        style="background-color: #ac2bac;"
-        href="https://www.instagram.com/pugazh_frank/"
-        role="button"
-        ><i class="fab fa-instagram"></i
-      ></a>
+        <article class="cert reveal" style="--d: .25s">
+          <div class="cert-img"><img src="./Basics of excel.png" alt="Excel Basics for Data Analysis" /></div>
+          <div class="cert-body">
+            <div class="cert-issuer"><img src="./coursera.avif" alt="" /><span>Coursera</span></div>
+            <h3>Excel Basics for Data Analysis</h3>
+            <p class="mono muted small">83f1ab9c7e0370b60597d527caa68b72 · May 2024</p>
+            <a class="cert-link" href="https://coursera.org/share/83f1ab9c7e0370b60597d527caa68b72" target="_blank" rel="noopener">View credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
 
-      <!-- Linkedin -->
-      <a
-        data-mdb-ripple-init
-        class="btn text-white btn-floating m-1"
-        style="background-color: #0082ca;"
-        href="https://www.linkedin.com/in/pugazharasan312/"
-        role="button"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-      <!-- Github -->
-      <a
-        data-mdb-ripple-init
-        class="btn text-white btn-floating m-1"
-        style="background-color: #333333;"
-        href="https://github.com/pugazharasan007"
-        role="button"
-        ><i class="fab fa-github"></i
-      ></a>
-    </section>
-    <!-- Section: Social media -->
-  </div>
-  <!-- Grid container -->
+        <article class="cert reveal" style="--d: .3s">
+          <div class="cert-img"><img src="./Tata.png" alt="Tata Group Data Visualisation" /></div>
+          <div class="cert-body">
+            <div class="cert-issuer"><img src="./Tata.jpg" alt="" /><span>Tata · Forage</span></div>
+            <h3>Data Visualisation: Empowering Business with Effective Insights</h3>
+            <p class="mono muted small">9LXvuCbQtxupXE9Pt · Jul 2024</p>
+            <a class="cert-link" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/MyXvBcppsW2FkNYCX_Tata%20Group_XYsb79oGqNJ82Lsbh_1719815453029_completion_certificate.pdf" target="_blank" rel="noopener">View credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
 
-  <!-- Copyright -->
-  <div class="text-center p-3 text-white" style="background-color: #0a4275;">
-   
-    <p> © 2020 Copyright: Pugazharasan</p>
-  </div>
-  <!-- Copyright -->
-</footer> 
-  
-  
-</footer>
+        <article class="cert reveal" style="--d: .35s">
+          <div class="cert-img"><img src="./IBM_certificate.png" alt="IBM Machine Learning with Python" /></div>
+          <div class="cert-body">
+            <div class="cert-issuer"><img src="./IBM.png" alt="" /><span>IBM · Coursera</span></div>
+            <h3>Machine Learning with Python</h3>
+            <p class="mono muted small">ac872cd580ff408b90bed944b1d0cac2 · Aug 2023</p>
+            <a class="cert-link" href="#" target="_blank" rel="noopener">View credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
 
+        <article class="cert reveal" style="--d: .4s">
+          <div class="cert-img"><img src="./NLP.png" alt="NLP with Python" /></div>
+          <div class="cert-body">
+            <div class="cert-issuer"><img src="./LinkedIn-logo.png" alt="" /><span>LinkedIn</span></div>
+            <h3>NLP with Python for Machine Learning Essential Training</h3>
+            <p class="mono muted small">d1debac313bf05f0b9c8143d66abd · Jul 2023</p>
+            <a class="cert-link" href="#" target="_blank" rel="noopener">View credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
 
-      
-   
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-       crossorigin="anonymous">
-           document.querySelector('a[href="#profile"]').addEventListener('click', function(event) {
-        event.preventDefault();
-        document.querySelector('#profile').scrollIntoView({ behavior: 'smooth' });
-    });
-      
-      </script>
+        <article class="cert reveal" style="--d: .45s">
+          <div class="cert-img"><img src="./RNN.png" alt="Recurrent Neural Network" /></div>
+          <div class="cert-body">
+            <div class="cert-issuer"><img src="./LinkedIn-logo.png" alt="" /><span>LinkedIn</span></div>
+            <h3>Recurrent Neural Network</h3>
+            <p class="mono muted small">e9e0e07c90515dbb57596bd9380a4e297b · Aug 2023</p>
+            <a class="cert-link" href="https://www.linkedin.com/learning/certificates/e9e0e07c90515dbb57596bd9380a4e297b6fca6ba4f3ca5f703422b3cc7d9559" target="_blank" rel="noopener">View credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA ============== -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta reveal">
+        <span class="eyebrow mono">// let's build</span>
+        <h2 class="section-title">Have a project in mind?</h2>
+        <p>Whether it's a dashboard, an automation flow, or an LLM-powered tool — I'd love to hear about it.</p>
+        <div class="cta-actions">
+          <a href="./contact.html" class="btn btn-primary">
+            Get in touch <i class="fa-solid fa-paper-plane"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/pugazharasan312/" target="_blank" rel="noopener" class="btn btn-ghost">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#top" class="nav-brand">
+          <img src="./My first design.png" alt="" />
+          <span>Pugazh<span class="dot">.</span></span>
+        </a>
+        <p class="muted small mt-1">Data &amp; AI Analyst @ AssetPLUS</p>
+      </div>
+
+      <div class="socials">
+        <a href="https://pugazharasan007.github.io/Pugazharasan/" aria-label="Website"><i class="fa-solid fa-house"></i></a>
+        <a href="https://www.instagram.com/pugazh_frank/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/pugazharasan312/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/pugazharasan007" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span class="mono muted">© <span id="year">2026</span> Pugazharasan — designed &amp; built with care.</span>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
-</html> 
+</html>

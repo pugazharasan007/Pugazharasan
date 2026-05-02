@@ -1,437 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pugazh</title>
-    <link rel="icon" type="image/x-icon" href="./My first design.png">
-    <link rel="stylesheet" href="./Frame.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR&family=Playwrite+AT:ital@1&family=Playwrite+BE+VLG&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects · Pugazharasan</title>
+  <meta name="description" content="A collection of data science, machine learning, and analytics projects by Pugazharasan." />
+  <link rel="icon" type="image/x-icon" href="./My first design.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Geist:wght@300..700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-<body class="bg-white">
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark"  style="background-color: #0a4275;">
-   
-    <a href="#" class=" navbar-brand active"><img src="./My first design.png" alt="Peace" height="25"> Pugazh</a>
-    <button
-    type="button"
-    class="navbar-toggler"
-    data-bs-target="#navbarNav"
-    data-bs-toggle="collapse"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle Navbar">
-        <span class="navbar-toggler-icon"></span>
+<body>
+
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav">
+    <a href="./index.html" class="nav-brand">
+      <img src="./My first design.png" alt="" />
+      <span>Pugazh<span class="dot">.</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+      <span></span><span></span><span></span>
     </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./Projects.html" class="active">Projects</a></li>
+      <li><a href="./Experience.html">Experience</a></li>
+      <li><a href="./index.html#certificates">Certificates</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="mx-auto"></div>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a href="./index.html" class=" nav-link text-white">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="./Projects.html" class="  nav-link text-white">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="./Experience.html" class="  nav-link text-white">Experience
-                
-              </a>
-          </li>
-          
-            <li class="nav-item">
-                <a href="./contact.html" class="  nav-link text-white">Contact</a>
-            </li>
-        </ul>
+  <header class="page-header">
+    <div class="container">
+      <span class="eyebrow mono reveal">// portfolio</span>
+      <h1 class="page-title reveal" style="--d: .1s">Projects.</h1>
+      <p class="page-sub reveal" style="--d: .2s">
+        A selection of data science, machine learning, and analytics work — from
+        dashboards and predictive models to NLP pipelines.
+      </p>
 
+      <div class="filter-bar reveal" style="--d: .3s">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="analytics">Analytics</button>
+        <button class="filter-btn" data-filter="nlp">NLP</button>
+      </div>
     </div>
+  </header>
 
+  <section class="section section-tight">
+    <div class="container">
+      <div class="project-grid">
 
-</nav>
-
-
-<section id="dashboard_preview ">
-        <h1 class="display-4 px-3 text-center mt-5 fade-up">Projects</h1>
-        <div id="carouselExampleInterval" class="carousel slide fade-up px-3 rounded-3" data-bs-ride="true">
-            <div class="carousel-inner rounded-4">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="./Online_retail_store.png" class="d-block w-100" alt="retail">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="./Titanic.png" class="d-block w-100" alt="Titanic">
-              </div>
-              <div class="carousel-item">
-                <img src="./Iam_neo.jpg" class="d-block w-100" alt="iam_neo">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="./OCd.png" class="d-block w-100" alt="Titanic">
-              </div>
-              <div class="carousel-item">
-                <img src="./OCd-2.png" class="d-block w-100" alt="iam_neo">
-              </div>
-              <div class="carousel-item">
-                <img src="./Prime_dashboard.png" class="d-block w-100" alt="iam_neo">
-              </div>
-              
+        <a href="https://github.com/pugazharasan007/Prime_video_Analysis" target="_blank" rel="noopener"
+           class="project-card reveal" data-cat="dashboard analytics">
+          <div class="project-img"><img src="./Prime.webp" alt="Prime Video Dashboard" /></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Dashboard</span>
+              <span class="tag">Power BI</span>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+            <h3>Prime Video Dashboard</h3>
+            <p>Interactive analytics dashboard exploring Prime Video catalog patterns and viewer trends.</p>
+            <span class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+        </a>
 
-</section>
-<section id="Personal_project-1 my-5">
-    <div class="container my-5 fade-up">
-
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 my- fade-up">
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Prime.webp" class="card-img-top" alt="...">
-  
-              <div class="card-body">
-                <h5 class="card-title">Prime Video Dashboard</h5>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                        <button class="btn btn-primary btn-lg" type="button"><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="https://github.com/pugazharasan007/Prime_video_Analysis">Repository &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                          </svg></a></button>
-                    </div>
-
-                </div>
-              </div>
+        <a href="https://github.com/pugazharasan007/Customer_Management_System" target="_blank" rel="noopener"
+           class="project-card reveal" style="--d: .05s" data-cat="dashboard">
+          <div class="project-img"><img src="./CRM.png" alt="Customer Management System" /></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Full-Stack</span>
+              <span class="tag">CRUD</span>
             </div>
+            <h3>Customer Management System</h3>
+            <p>End-to-end CRM with customer records, search, and reporting features.</p>
+            <span class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
           </div>
-        
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="./CRM.png" class="card-img-top" alt="...">
-  
-              <div class="card-body">
-                <h5 class="card-title">Customer Management System</h5>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                        <button class="btn btn-primary btn-lg" type="button"><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="https://github.com/pugazharasan007/Customer_Management_System">Repository &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                          </svg></a></button>
-                    </div>
+        </a>
 
-                </div>
-              </div>
+        <a href="https://github.com/pugazharasan007/Employee-Churn-Prediction" target="_blank" rel="noopener"
+           class="project-card reveal" style="--d: .1s" data-cat="ml">
+          <div class="project-img"><img src="./Employee.png" alt="Employee Churn Prediction" /></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">ML</span>
+              <span class="tag">Classification</span>
             </div>
+            <h3>Employee Churn Prediction</h3>
+            <p>Predictive model identifying employees at risk of leaving, using HR features and ensemble methods.</p>
+            <span class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
           </div>
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Employee.png" class="card-img-top" alt="...">
-  
-              <div class="card-body">
-                <h5 class="card-title">Employee Churn Prediction</h5>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                        <button class="btn btn-primary btn-lg" type="button"><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="https://github.com/pugazharasan007/Employee-Churn-Prediction">Repository &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                          </svg></a></button>
-                    </div>
+        </a>
 
-                </div>
-              </div>
+        <a href="https://github.com/pugazharasan007/Comprehensive-OCD-Patient-Insights-SQL-Analysis-and-Power-BI-Visualization"
+           target="_blank" rel="noopener"
+           class="project-card reveal" style="--d: .15s" data-cat="dashboard analytics">
+          <div class="project-img"><img src="./Healthcare_OCD.png" alt="OCD Patient Insights" /></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Healthcare</span>
             </div>
+            <h3>OCD Patient Insights</h3>
+            <p>SQL analysis &amp; Power BI dashboard surfacing demographic and clinical patterns in OCD patient data.</p>
+            <span class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
           </div>
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Healthcare_OCD.png" class="card-img-top" alt="...">  
-              <div class="card-body">
-                <h5 class="card-title">OCDPatient Insights SQL& Power-BI </h5>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button class="btn btn-primary btn-lg" type="button"><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="https://github.com/pugazharasan007/Comprehensive-OCD-Patient-Insights-SQL-Analysis-and-Power-BI-Visualization">Repository &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                      </svg></a></button>
-                  </div>
+        </a>
 
-                </div>
-              </div>
+        <a href="https://github.com/pugazharasan007/Netflix_DataAnalysis" target="_blank" rel="noopener"
+           class="project-card reveal" style="--d: .2s" data-cat="analytics">
+          <div class="project-img"><img src="./Netflix.png" alt="Netflix Data Analysis" /></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">EDA</span>
+              <span class="tag">Python</span>
             </div>
+            <h3>Netflix Data Analysis</h3>
+            <p>Exploratory analysis of Netflix's catalog: genre distribution, content trends over time, and ratings.</p>
+            <span class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
           </div>
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Netflix.png" class="card-img-top" alt="...">  
-              <div class="card-body">
-                <h5 class="card-title">Netflix_DataAnalysis</h5>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button class="btn btn-primary btn-lg" type="button"><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="https://github.com/pugazharasan007/Netflix_DataAnalysis">Repository &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                      </svg></a></button>
-                  </div>
+        </a>
 
-                </div>
-              </div>
+        <a href="https://github.com/pugazharasan007/Titanic-Dataset-Analysis-and-Prediction" target="_blank" rel="noopener"
+           class="project-card reveal" style="--d: .25s" data-cat="ml analytics">
+          <div class="project-img"><img src="./Titanics.png" alt="Titanic Analysis" /></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">ML</span>
+              <span class="tag">EDA</span>
             </div>
+            <h3>Titanic — Analysis &amp; Prediction</h3>
+            <p>Classic survival prediction with thorough EDA, feature engineering, and model comparison.</p>
+            <span class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
           </div>
-  
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Titanics.png" class="card-img-top" alt="...">  
-              <div class="card-body">
-                <h5 class="card-title">Titanic-Dataset-Analysis</h5>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button class="btn btn-primary btn-lg" type="button"><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="https://github.com/pugazharasan007/Titanic-Dataset-Analysis-and-Prediction">Repository &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                      </svg></a></button>
-                  </div>
+        </a>
 
-                </div>
-              </div>
+        <a href="https://github.com/pugazharasan007/Dynamic-sales-analysis" target="_blank" rel="noopener"
+           class="project-card reveal" style="--d: .3s" data-cat="dashboard analytics">
+          <div class="project-img"><img src="./Dynamic sales.png" alt="Dynamic Sales Analysis" /></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Sales</span>
+              <span class="tag">Dashboard</span>
             </div>
+            <h3>Dynamic Sales Analysis</h3>
+            <p>Interactive sales dashboard tracking KPIs, regional performance, and product trends in real time.</p>
+            <span class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
           </div>
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Dynamic sales.png" class="card-img-top" alt="...">  
-              <div class="card-body">
-                <h5 class="card-title">Dynamic-sales-analysis</h5>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button class="btn btn-primary btn-lg" type="button"><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="https://github.com/pugazharasan007/Dynamic-sales-analysis">Repository &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                      </svg></a></button>
-                  </div>
+        </a>
 
-                </div>
-              </div>
+        <a href="https://github.com/pugazharasan007/Online-Retail-Store-Trend-Analysis" target="_blank" rel="noopener"
+           class="project-card reveal" style="--d: .35s" data-cat="analytics">
+          <div class="project-img"><img src="./Online Retail store.png" alt="Online Retail Store" /></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">E-commerce</span>
+              <span class="tag">Trends</span>
             </div>
+            <h3>Online Retail Store — Trends</h3>
+            <p>Customer-behaviour and product-trend analysis on a real e-commerce transaction dataset.</p>
+            <span class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
           </div>
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Online Retail store.png" class="card-img-top" alt="...">  
-              <div class="card-body">
-                <h5 class="card-title">Online Retail Store Analysis</h5>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button class="btn btn-primary btn-lg" type="button"><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="https://github.com/pugazharasan007/Online-Retail-Store-Trend-Analysis">Repository &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                      </svg></a></button>
-                  </div>
+        </a>
 
-                </div>
-              </div>
+        <a href="https://github.com/pugazharasan007/Exploring-the-Impact-of-Text-Preprocessing-on-KNN-Classification-A-Case-Study-with-E-commerce-Data"
+           target="_blank" rel="noopener"
+           class="project-card reveal" style="--d: .4s" data-cat="nlp ml">
+          <div class="project-img"><img src="./E_commerce.png" alt="Text Preprocessing KNN" /></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">NLP</span>
+              <span class="tag">KNN</span>
             </div>
+            <h3>Text Preprocessing &amp; KNN</h3>
+            <p>Case study measuring how text-preprocessing choices change KNN classifier accuracy on e-commerce data.</p>
+            <span class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
           </div>
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="./E_commerce.png" class="card-img-top" alt="...">  
-              <div class="card-body">
-                <h5 class="card-title">Text-Preprocessing-on-KNN-Classification E-Commerce Data</h5>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button class="btn btn-primary btn-lg" type="button"><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="https://github.com/pugazharasan007/Exploring-the-Impact-of-Text-Preprocessing-on-KNN-Classification-A-Case-Study-with-E-commerce-Data">Repository &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                      </svg></a></button>
+        </a>
 
-                  </div>
+        <a href="https://github.com/pugazharasan007/Understanding-the-IPL-2022-Cricket-Market-via-Auction-Analytics"
+           target="_blank" rel="noopener"
+           class="project-card reveal" style="--d: .45s" data-cat="analytics">
+          <div class="project-img"><img src="./CSK.png" alt="IPL 2022 Auction Analytics" /></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Sports</span>
+              <span class="tag">Analytics</span>
+            </div>
+            <h3>IPL 2022 — Auction Analytics</h3>
+            <p>Deep dive into IPL 2022 auction dynamics, team-level spending and player-value patterns.</p>
+            <span class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+        </a>
 
-                </div>
-              </div>
+        <a href="https://github.com/pugazharasan007/Mail_Spam_detection-using-NavieBayes" target="_blank" rel="noopener"
+           class="project-card reveal" style="--d: .5s" data-cat="nlp ml">
+          <div class="project-img"><img src="./Mail_spam.png" alt="Mail Spam Detection" /></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">NLP</span>
+              <span class="tag">Naive Bayes</span>
             </div>
+            <h3>Mail Spam Detection</h3>
+            <p>Classifier separating spam from ham using Naive Bayes and a clean text-cleaning pipeline.</p>
+            <span class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
           </div>
-  
-          
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="./CSK.png" class="card-img-top" alt="...">  
-              <div class="card-body">
-                <h5 class="card-title">IPL-2022-Cricket-Market-via-Auction-Analytics</h5>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button class="btn btn-primary btn-lg" type="button"><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="https://github.com/pugazharasan007/Understanding-the-IPL-2022-Cricket-Market-via-Auction-Analytics" >Repository &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                      </svg></a></button>
-                  </div>
- 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="./Mail_spam.png" class="card-img-top" alt="...">  
-              <div class="card-body">
-                <h5 class="card-title">Mail_Spam_detection-using-NavieBayes</h5>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button class="btn btn-primary btn-lg" type="button"><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="https://github.com/pugazharasan007/Mail_Spam_detection-using-NavieBayes">Repository &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                      </svg></a></button>
-                  </div>
+        </a>
 
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow mono">// research</span>
+        <h2 class="section-title">College &amp; research work.</h2>
       </div>
 
-
-
-</section>
-
-<section id="project-1">
-  <h1 class="mt-5 pt-5 display-4 text-center fade-in-text">College Projects</h1>
-    <div class="row my-5 py-5 bg-primary text-white fade-up">
-        <div class="col-12 col-md-6">
-            <img src="./gait.png" alt="gait" class="img-fluid text-center text-md-start">
+      <article class="spotlight reveal">
+        <div class="spotlight-img">
+          <img src="./gait.png" alt="Gait analysis research" />
         </div>
-        <div class="col-12 col-md-6 text-start px-sm-3">
-            <h2 class=" display-6 text-center text-md-start">Exploring the Robustness of Gait Cycle and Gait Phase Recognition Using IMU Sensors
-            </h2>
-            <p class="text-center text-md-start px-3">In the semi-supervised gait analysis research, the gait cycle was identified using the slope formula. Each cycle was separated into seven phases, each decided by a percentage formula to assure proper segmentation. The gait phases were then classified using K-means clustering, with labels ranging from 1 to 7. An RNN algorithm was trained and evaluated on the labeled data, resulting in an amazing 98% accuracy.</p>
-              <p class="text-center text-md-start px-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-robot" viewBox="0 0 16 16">
-                  <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-3-4.438C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135z"/>
-                  <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5z"/>
-                </svg>
-                <strong>&nbsp;Gait Cycle Detection:</strong> We used the slope formula to identify gait cycles in the data
-              </p>
-              <p class="text-center text-md-start px-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-robot" viewBox="0 0 16 16">
-                  <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-3-4.438C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135z"/>
-                  <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5z"/>
-                </svg>
-                <strong>&nbsp; Phase Segmentation: </strong>We used a percentage-based technique to divide each gait cycle into seven separate phases.
-              </p>
-              <p class="text-center text-md-start px-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-robot" viewBox="0 0 16 16">
-                  <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-3-4.438C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135z"/>
-                  <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5z"/>
-                </svg>
-                <strong>&nbsp;Clustering:</strong>  We used k-means clustering to group the gait stages.
-              </p>
-              <p class="text-center text-md-start px-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-robot" viewBox="0 0 16 16">
-                  <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-3-4.438C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135z"/>
-                  <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5z"/>
-                </svg>
-                <strong>&nbsp;Labeling: </strong>The grouped phases were labeled from one to seven.
-              </p>
-              <p class="text-center text-md-start px-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-robot" viewBox="0 0 16 16">
-                  <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-3-4.438C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135z"/>
-                  <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5z"/>
-                </svg>
-                <strong>&nbsp;Model Training and Accuracy: </strong> We trained and tested an RNN algorithm on labeled data, and it achieved 98% accuracy.
-              </p>
-              
+        <div class="spotlight-body">
+          <span class="mono accent">Research · M.Tech, VIT</span>
+          <h3>Robustness of Gait Cycle &amp; Phase Recognition with IMU Sensors</h3>
+          <p>
+            A semi-supervised pipeline for human-gait analysis. Identified gait cycles via the
+            slope formula, segmented each cycle into seven phases using a percentage-based method,
+            clustered them with K-means, and trained an RNN that achieved <strong>98% accuracy</strong>
+            on the labeled phases.
+          </p>
+          <ul class="spotlight-list">
+            <li><i class="fa-solid fa-check"></i> Slope-based gait cycle detection</li>
+            <li><i class="fa-solid fa-check"></i> Percentage segmentation into 7 phases</li>
+            <li><i class="fa-solid fa-check"></i> K-means clustering &amp; labeling</li>
+            <li><i class="fa-solid fa-check"></i> RNN training — 98% accuracy</li>
+          </ul>
         </div>
+      </article>
+
+      <article class="spotlight spotlight-rev reveal">
+        <div class="spotlight-img">
+          <img src="./Tamil_text_summrization.png" alt="Tamil text summarization" />
+        </div>
+        <div class="spotlight-body">
+          <span class="mono accent">Research · NLP</span>
+          <h3>Tamil Text Summarization from YouTube Videos</h3>
+          <p>
+            An automated insight-generation pipeline for Tamil content. Pulled transcripts via the
+            YouTube API across instructional, news, and entertainment categories, translated to Tamil,
+            and built a ~1,500-row dataset. Cleaned with stop-word removal, regex, vectorization,
+            stemming and lemmatization, then summarized with sentence-transformers (X-BERT).
+            Cosine-similarity evaluation hit <strong>≥ 80% accuracy on 75% of the dataset</strong>.
+          </p>
+          <ul class="spotlight-list">
+            <li><i class="fa-solid fa-check"></i> YouTube API · transcript collection</li>
+            <li><i class="fa-solid fa-check"></i> Translation to Tamil · 1,500-row corpus</li>
+            <li><i class="fa-solid fa-check"></i> NLP cleaning + embeddings</li>
+            <li><i class="fa-solid fa-check"></i> X-BERT summarization · cosine eval</li>
+          </ul>
+        </div>
+      </article>
     </div>
-</section>
-<section id="project-2 ">
-    <div class="row fade-up bg-info text-white mt-5 py-5  ">
-        <div class="col-12 col-md-6 -mx-auto text-center text-md-start">
-            <h2 class="display-6 px-md-3 ">Tamil Text Summarization from YouTube Videos: An Automated Insight Generation Approach
-            </h2>
-            <p class="text-center text-md-start px-3">In the Tamil text summarizing project, the YouTube API was utilized to choose instructional, entertainment, and news content and extract transcripts from the videos. The transcripts were translated into Tamil using Python's translate module, resulting in a dataset of around 1500 entries. NLP approaches such as removing stop words, regex for undesirable letters, and removing English content from the Tamil text were used. Additional NLP techniques, such as vectorization, word embedding, stemming, and lemmatization, were applied. Summarization was performed using sentence transformers, notably X-BERT, and the summarized text was compared to the original using cosine similarity. The model achieved 80% or greater accuracy on 75% of the dataset.
-            </p>
-            <p class="text-center text-md-start px-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16">
-                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
-              </svg><strong>&nbsp;Data Collection: </strong>I used the YouTube API to get transcripts of instructional, entertainment, and news videos.</p>
-            <p class="text-center text-md-start px-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16">
-                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
-              </svg><strong>&nbsp;Translation: </strong>Transcripts were translated into Tamil using Pandas' translate library, resulting in a dataset of around 1500 entries.</p>
-            <p class="text-center text-md-start px-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16">
-                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
-              </svg><strong>&nbsp;NLP Preprocessing: </strong>Used a variety of NLP approaches, including stop word removal, regex cleaning, and English content removal.</p>
-            <p class="text-center text-md-start px-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16">
-                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
-              </svg><strong>&nbsp;Summarization:</strong> Text summarization was performed using sentence transformers, notably X-BERT.</p>
-            <p class="text-center text-md-start px-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16">
-                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
-              </svg><strong>&nbsp;Accuracy: </strong>Using cosine similarity for evaluation, we achieved above 80% accuracy on 75% of the datase</p>
+  </section>
 
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta reveal">
+        <span class="eyebrow mono">// collaborate</span>
+        <h2 class="section-title">Want something built?</h2>
+        <p>I'm always up for a new dashboard, ML experiment, or automation challenge.</p>
+        <div class="cta-actions">
+          <a href="./contact.html" class="btn btn-primary">
+            Get in touch <i class="fa-solid fa-paper-plane"></i>
+          </a>
+          <a href="https://github.com/pugazharasan007" target="_blank" rel="noopener" class="btn btn-ghost">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
         </div>
-        <div class="col-12 col-md-6 d-flex flex-column  justify-content-center">
-            <img src="./Tamil_text_summrization.png" alt="" class="img-fluid">
-        </div>
+      </div>
     </div>
+  </section>
 
-</section>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="./index.html" class="nav-brand">
+          <img src="./My first design.png" alt="" />
+          <span>Pugazh<span class="dot">.</span></span>
+        </a>
+        <p class="muted small mt-1">Data &amp; AI Analyst @ AssetPLUS</p>
+      </div>
+      <div class="socials">
+        <a href="https://pugazharasan007.github.io/Pugazharasan/" aria-label="Website"><i class="fa-solid fa-house"></i></a>
+        <a href="https://www.instagram.com/pugazh_frank/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/pugazharasan312/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/pugazharasan007" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span class="mono muted">© <span id="year">2026</span> Pugazharasan — designed &amp; built with care.</span>
+    </div>
+  </footer>
 
-</section>
-
-
-
-<footer class="bg-body-tertiary text-center" ">
-  <!-- Grid container -->
-  <div class="container p-4 pb-0" >
-    <!-- Section: Social media -->
-    <section class="mb-4 " >
-      <!-- Google -->
-      <a
-        data-mdb-ripple-init
-        class="btn text-white btn-floating m-1"
-        style="background-color: #dd4b39;"
-        href="https://pugazharasan007.github.io/Pugazh_Portfolio_/"
-        role="button"
-        ><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
-
-      <!-- Instagram -->
-      <a
-        data-mdb-ripple-init
-        class="btn text-white btn-floating m-1"
-        style="background-color: #ac2bac;"
-        href="https://www.instagram.com/pugazh_frank/"
-        role="button"
-        ><i class="fab fa-instagram"></i
-      ></a>
-
-      <!-- Linkedin -->
-      <a
-        data-mdb-ripple-init
-        class="btn text-white btn-floating m-1"
-        style="background-color: #0082ca;"
-        href="https://www.linkedin.com/in/pugazharasan312/"
-        role="button"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-      <!-- Github -->
-      <a
-        data-mdb-ripple-init
-        class="btn text-white btn-floating m-1"
-        style="background-color: #333333;"
-        href="https://github.com/pugazharasan007"
-        role="button"
-        ><i class="fab fa-github"></i
-      ></a>
-    </section>
-    <!-- Section: Social media -->
-  </div>
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center p-3 text-white" style="background-color: #0a4275;">
-   
-    <p> © 2020 Copyright: Pugazharasan</p>
-  </div>
-  <!-- Copyright -->
-</footer> 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+  <script src="./script.js"></script>
 </body>
 </html>
