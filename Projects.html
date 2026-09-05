@@ -228,6 +228,51 @@
   <section class="section">
     <div class="container">
       <div class="section-head reveal">
+        <span class="eyebrow mono">// industry</span>
+        <h2 class="section-title">Work @ AssetPlus.</h2>
+      </div>
+
+      <article class="spotlight reveal">
+        <div class="spotlight-img">
+          <img src="./codebase_chat.svg" alt="Codebase Chat architecture" />
+        </div>
+        <div class="spotlight-body">
+          <span class="mono accent">Internal Tool · Data &amp; AI Analyst, AssetPlus</span>
+          <h3>Codebase Chat — Notebook-Grounded SQL/Query Generator</h3>
+          <p>
+            A fully offline RAG system that turns plain-English data questions into
+            schema-aware, safe-by-construction PostgreSQL/MongoDB code — grounded in
+            500+ real internal notebooks instead of generic examples. Every result is
+            retrieved via hybrid semantic + BM25 search, fused with Reciprocal Rank
+            Fusion, grounded against the actual database schema, and scanned by a
+            guardrail layer that blocks destructive operations before it ever reaches
+            the analyst. Verified patterns feed back into a persistent approved-pattern
+            memory, so the tool keeps improving on the team's own conventions.
+          </p>
+          <ul class="spotlight-list">
+            <li><i class="fa-solid fa-check"></i> Indexed 500+ Jupyter notebooks into a local ChromaDB vector store</li>
+            <li><i class="fa-solid fa-check"></i> Hybrid retrieval — vector search + BM25, merged via RRF</li>
+            <li><i class="fa-solid fa-check"></i> Schema-grounded generation with mandatory join/filter hints</li>
+            <li><i class="fa-solid fa-check"></i> Guardrails against destructive ops + read-only DB enforcement + audit log</li>
+            <li><i class="fa-solid fa-check"></i> Self-improving approved-pattern memory store</li>
+            <li><i class="fa-solid fa-check"></i> Actively used in production for partner segmentation &amp; growth-metric reporting</li>
+          </ul>
+          <div class="project-tags mt-2">
+            <span class="tag">Python</span>
+            <span class="tag">RAG</span>
+            <span class="tag">ChromaDB</span>
+            <span class="tag">BM25</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
         <span class="eyebrow mono">// research</span>
         <h2 class="section-title">College &amp; research work.</h2>
       </div>

@@ -144,6 +144,7 @@ ol, ul { list-style: none; }
 .small { font-size: 13px; }
 .accent { color: var(--accent); }
 .mt-1 { margin-top: 8px; }
+.mt-2 { margin-top: 16px; }
 
 /* ============================================================
    NAV
