@@ -1,25 +1,26 @@
 /* ============================================================
    Pugazharasan — Portfolio
-   Dark editorial-tech aesthetic
+   Light editorial-tech aesthetic — sandal / cream
    ============================================================ */
 
 :root {
   /* Color system */
-  --bg: #0a0e1a;
-  --bg-2: #0f1424;
-  --surface: rgba(255, 255, 255, 0.04);
-  --surface-2: rgba(255, 255, 255, 0.06);
-  --border: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.16);
+  --bg: #faf5ec;
+  --bg-2: #f2e9da;
+  --surface: rgba(35, 28, 20, 0.035);
+  --surface-2: rgba(35, 28, 20, 0.065);
+  --border: rgba(35, 28, 20, 0.1);
+  --border-strong: rgba(35, 28, 20, 0.2);
+  --grid-line: rgba(35, 28, 20, 0.05);
 
-  --text: #e8eaf0;
-  --text-muted: #8b92a8;
-  --text-faint: #5a6178;
+  --text: #2a2420;
+  --text-muted: #6b6055;
+  --text-faint: #a49889;
 
-  --accent: #5eead4;          /* teal */
-  --accent-2: #f472b6;         /* pink */
-  --accent-3: #fbbf24;         /* gold */
-  --accent-glow: rgba(94, 234, 212, 0.4);
+  --accent: #0f766e;          /* deep teal */
+  --accent-2: #c2703d;         /* terracotta */
+  --accent-3: #b8862c;         /* muted gold */
+  --accent-glow: rgba(15, 118, 110, 0.25);
 
   /* Type */
   --font-display: 'Fraunces', 'Times New Roman', serif;
@@ -65,7 +66,7 @@ ol, ul { list-style: none; }
 }
 .orb {
   position: absolute; border-radius: 50%;
-  filter: blur(100px); opacity: .35;
+  filter: blur(100px); opacity: .18;
   will-change: transform;
 }
 .orb-1 {
@@ -94,8 +95,8 @@ ol, ul { list-style: none; }
 .bg-grid {
   position: fixed; inset: 0; z-index: -1; pointer-events: none;
   background-image:
-    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
   background-size: 64px 64px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black, transparent);
 }
@@ -541,7 +542,7 @@ ol, ul { list-style: none; }
 .chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip {
   padding: 6px 14px;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 999px;
   font-size: 13px;
@@ -914,7 +915,7 @@ ol, ul { list-style: none; }
   font-family: var(--font-mono);
   font-size: 11px;
   padding: 3px 10px;
-  background: rgba(255,255,255,.04);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 999px;
   color: var(--text-muted);
