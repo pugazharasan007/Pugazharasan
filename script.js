@@ -84,15 +84,18 @@ if (counters.length) {
   counters.forEach(c => counterIO.observe(c));
 }
 
-// --- Dynamic tenure (Experience page) ---
-const tenureEl = document.getElementById('tenure');
-if (tenureEl) {
-  const start = new Date(tenureEl.dataset.start);
+// --- Dynamic tenure (Experience + Home pages) ---
+function tenureYears(startStr) {
+  const start = new Date(startStr);
   const now = new Date();
   const months = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
-  const years = Math.floor(months / 12) + (months % 12) / 10;
-  tenureEl.textContent = `Current · ${years.toFixed(1)}+ years`;
+  return (Math.floor(months / 12) + (months % 12) / 10).toFixed(1);
 }
+const tenureEl = document.getElementById('tenure');
+if (tenureEl) tenureEl.textContent = `Current · ${tenureYears(tenureEl.dataset.start)}+ years`;
+
+const tenureInlineEl = document.getElementById('tenure-inline');
+if (tenureInlineEl) tenureInlineEl.textContent = `${tenureYears(tenureInlineEl.dataset.start)}+`;
 
 // --- Project filter (Projects page) ---
 const filterBtns = document.querySelectorAll('.filter-btn');
